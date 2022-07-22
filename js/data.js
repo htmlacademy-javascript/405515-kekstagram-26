@@ -42,9 +42,6 @@ const getPhoto = (i) => {
     galleryPhotos.push(photo);
   }
 
-  // const photos = Array.from({length: 25}, (_, i) => getPhoto(i))
-  // console.log(photos);
-
 export {getRandomElement, getComment, getPhoto};
 
 
