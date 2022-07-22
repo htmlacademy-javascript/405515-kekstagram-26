@@ -1,5 +1,5 @@
-import {getRandomInt} from './utils/get-random-int';
-import {checkStringLength} from './utils/check-string-length';
+import { getRandomInt } from './utils/get-random-int';
+import { checkStringLength } from './utils/check-string-length';
 
 //Входные данные//
 const DESCRIPTIONS = ['Кот', 'Бабочка', 'Снежинка', 'Автомобиль', 'Колокольчик', 'Мороженое'];
@@ -26,7 +26,7 @@ const getComment = () => (
     name: getRandomElement(NAMES),
   });
 
-  //Добавляем фото с описанием//
+//Добавляем фото с описанием//
 const getPhoto = (i) => {
   return {
     id: i,
@@ -34,14 +34,14 @@ const getPhoto = (i) => {
     description: getRandomElement(DESCRIPTIONS),
     likes: getRandomInt(MIN_LIKES, MAX_LIKES),
     comments: Array.from({ length: getRandomInt(1, 10) }, getComment),
-}
+  }
 };
 
-  for (let i = 1; i <= itemsCount; i++) {
-    const photo = getPhoto(i);
-    galleryPhotos.push(photo);
-  }
+for (let i = 1; i <= itemsCount; i++) {
+  const photo = getPhoto(i);
+  galleryPhotos.push(photo);
+}
 
-export {getRandomElement, getComment, getPhoto};
+export { getRandomElement, getComment, getPhoto };
 
 

@@ -11,4 +11,4 @@ const getRandomInt = (min, max) => {
 };
 getRandomInt(1, 10);
 
-export {getRandomInt};
+export { getRandomInt };
