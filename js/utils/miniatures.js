@@ -13,4 +13,4 @@ const createPhotoDescription = (array) => {
   pictureContainer.appendChild(fragment);
 };
 
-export {createPhotoDescription};
+export { createPhotoDescription };
