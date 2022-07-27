@@ -11,4 +11,10 @@ const getRandomInt = (min, max) => {
 };
 getRandomInt(1, 10);
 
-export { getRandomInt };
+//Проверка длины строки//
+const checkStringLength = (checkString, maxlength) => checkString.length < maxlength;
+checkLength('Проверяемая строка', 20);
+
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export { getRandomInt, checkStringLength, isEscapeKey };
